@@ -1,0 +1,76 @@
+/*-------------------------------CABEÇALHO----------------------------------------------*/
+.box-1{ 
+/*     background-color:brown ; */
+    grid-area: box-1;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.conteudo-header{
+    height: 100%;
+}
+.col-1{
+    width: 25%;
+    height: 100%;
+    
+}
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.col-2{
+    width: 50%;
+    height: 100%;
+}
+
+.form{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border-style: hidden;
+    color: #ffffff;
+
+}
+
+.barra-pesquisa{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border-style: hidden;
+    color: #ffffff;
+    padding-left: 2%;
+}
+
+
+.barra-pesquisa::placeholder {
+    color: #ffffff;
+    opacity: 60%;
+}
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+
+
+.col-3{
+    width: 25%;
+    height: 100%;
+}
+.caixa-user{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.user{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.user img{
+height: 60%;
+}
