@@ -1,76 +1,94 @@
 /*-------------------------------CABEÇALHO----------------------------------------------*/
-.box-1{ 
-/*     background-color:brown ; */
-    grid-area: box-1;
-    grid-column: 1/4;
+.cabecalho{ 
+/* background-color:brown ; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-}
-.conteudo-header{
-    height: 100%;
-}
-.col-1{
-    width: 25%;
-    height: 100%;
-    
-}
-.logo{
-    max-width: 100%;
-    max-height: 100%;
+    height: 3rem;
 }
 
-.col-2{
-    width: 50%;
-    height: 100%;
-}
-
-.form{
-    width: 100%;
+/* 
+ .form{
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     border-style: hidden;
     color: #ffffff;
+    opacity:60%;
 
+} */
+
+.col-1-cab{
+/*     background-color: chocolate; */
+    width: 25%;
+    height: 100%;
+}
+.col-1-cab svg{
+    height: 100%;
+}
+
+.col-2-cab{
+
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.col-3-cab{
+/*     background-color: rgb(30, 210, 30); */
+    width: 25%;
+    text-align: right;
+
+}
+
+.caixa-pesquisa{
+    align-items: center;
+    height: 100%;
 }
 
 .barra-pesquisa{
-    width: 100%;
     background: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     border-style: hidden;
-    color: #ffffff;
-    padding-left: 2%;
+    color: #ffffff; 
+    height: 100%; 
+    width: 100%;  
+    transition: 0.4s;
 }
 
 
 .barra-pesquisa::placeholder {
     color: #ffffff;
-    opacity: 60%;
 }
+
+.barra-pesquisa:hover{
+    opacity:76%;
+}
+
+.barra-pesquisa:focus{
+    opacity:84%;  
+}
+
 textarea:focus, input:focus, select:focus {
     outline: 0;
 }
 
-
-.col-3{
-    width: 25%;
-    height: 100%;
-}
-.caixa-user{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: end;
-}
-.user{
-    display: flex;
-    align-content: space-between;
+.usuario{
+    display:inline-flex;
     align-items: center;
-    justify-content: end;
-    gap: 10px;
+    column-gap: 5%;
+    padding: 2%;
+    padding-right:3%;
+    height: 100%;
+    transition: 0.4s;
 }
-.user img{
-height: 60%;
+
+.usuario:hover{
+    background-color: #192F4A;
+    border-radius: 8px;
 }
+
+
+.usuario img{
+    height: 100%;
+    border-radius: 100%;
+}
+

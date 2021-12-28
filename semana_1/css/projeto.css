@@ -1,15 +1,17 @@
-.box-4{
+.projeto{
 /*     background-color:rgb(78, 243, 235) ; */
-    grid-area: box-4;
-    padding-top: 0;
+    grid-area: projeto;
 }
 
+.form-projeto input, textarea{
+    width: 100%;
+}
+
+
 .projeto h1 {
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
-    font-size: 16px;
-    padding: 20px;
-    padding-top: 0;
+    font-size: 14px;
 }
 
 .input{
@@ -18,34 +20,46 @@
     background: rgba(255, 255, 255, 0.16);
     border-style: hidden;
     color: #ffffff;
-    padding: 5%;
-    margin: 2px;
+    opacity: 60%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .input::placeholder{
     color: #ffffff;
 }
 
+
+.input:hover{
+    opacity:76%;
+}
+
+.input:focus{
+    opacity:84%;  
+}
+
+
 .input option{
 color: #000000;
 font-weight: bold;
+background-color: cornflowerblue;
 }
 
-/* .borda-cor{
-    border:1px solid #ffffff;
-    border-radius: 8px;
-} */
+
+
+         .borda-cor{
+            border:none;
+            border-radius: 8px;
+        }
 
 .cores{
     border-radius: 8px;
     width: 100%;
-    height: 8vh;
     margin: 2px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 5px;
 }
 
-.cores::-webkit-color-swatch,
-::-moz-color-swatch {
-  border-color: transparent;
-}
 
 .botao{
     background-color:#5081FB;
@@ -63,3 +77,8 @@ font-weight: bold;
     border-color: red;
 }
 
+.botao:active{
+    border: 4px #3B65C5 solid;
+    background:#7BA4FC;
+    
+}
