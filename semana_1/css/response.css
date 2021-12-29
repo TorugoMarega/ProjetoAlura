@@ -1,15 +1,26 @@
 /* ----------------------------------------------------------------MOBILE--------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 0){
-    .caixa-pesquisa{
+    .usuario, .menu, .barra-pesquisa{
         visibility: hidden;
-    }
+    } 
+    
     .usuario{
-        visibility: hidden;
+        display: none;
     }
 
-    .menu{
-        visibility: hidden;
-    }  
+    .botao-lupa{
+
+    }
+
+    .caixa-hamburger{
+        background-color: cadetblue;
+        height: 100%;
+    }
+    .menu-hamburger{
+        visibility: visible;
+        background-color: brown;  
+
+    }     
 
     .projeto {
         grid-row: 2/3;
@@ -54,26 +65,22 @@
     }
 }   
 /* ------------------------------------------------------------------------TABLET--------------------------------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 768px){
+ @media screen and (min-width: 768px){
 
-    .caixa-pesquisa{
+    .caixa-pesquisa,  .menu-hamburger{
         visibility: visible;
     }
-    .usuario{
+    .caixa-pesquisa{
+        display: inline;
+    }
+    .usuario, .menu{
         visibility: hidden;
-      }
+      }  
     
-    .menu{
-        visibility: hidden;
-    }  
-
-
-
     .container{
         margin-top: 4rem;
         display: grid;
         grid-template-columns: 100%;
-        /* grid-template-rows: minmax(50px, auto); */
         grid-template-rows: 1fr 1fr;
         align-items: stretch;
         justify-items: stretch;
@@ -111,22 +118,29 @@
     .cores{
         height: 15vh;
     }
-}
+} 
 
 /* --------------------------------------------DESKTOP------------------------------------------ */
- @media screen and (min-width: 992px){
+  @media screen and (min-width: 992px){
 
     .usuario{
         visibility: visible;
       }
 
-    .caixa-pesquisa{
+    .menu-hamburger{
+        visibility: hidden;
+    }  
+
+    .barra-pesquisa,  .menu{
         visibility: visible;
     }  
+
     
-    .menu{
-        visibility: visible;
-    }  
+
+    .caixa-hamburger, .div-lupa{
+        display: none;
+    }
+
 
     .container{
         margin-top: 4rem;
@@ -170,4 +184,26 @@
     .cores{
         height: 8vh;
     }
+
+    .usuario{
+    display:inline-flex;
+    align-items: center;
+    column-gap: 5%;
+    padding: 2%;
+    padding-right:3%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.usuario:hover{
+    background-color: #192F4A;
+    border-radius: 8px;
+}
+
+
+.usuario img{
+    height: 100%;
+    border-radius: 100%;
+}
+
 }

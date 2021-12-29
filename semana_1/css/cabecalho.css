@@ -71,24 +71,57 @@ textarea:focus, input:focus, select:focus {
     outline: 0;
 }
 
-.usuario{
-    display:inline-flex;
-    align-items: center;
-    column-gap: 5%;
-    padding: 2%;
-    padding-right:3%;
-    height: 100%;
-    transition: 0.4s;
+#check, #lupa{
+    display: none;
 }
 
-.usuario:hover{
-    background-color: #192F4A;
-    border-radius: 8px;
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+
 }
 
+.barra {
+height: 100%;
+width: 300px;
+position: absolute;
+transition: all .2s linear;
+right: -1000px;
 
-.usuario img{
-    height: 100%;
-    border-radius: 100%;
 }
 
+/* .caixa-hamburger nav{
+ width:100%;
+ position: absolute;
+top : 60px;
+}
+
+.caixa-hamburger nav a{
+ text-decoration: none;
+ 
+}
+
+.link {
+    background-color: #494950;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+}
+
+.link:hover {
+background-color: #050542;
+}
+
+#check:checked ~ .barra{
+transform : translateX(-1000px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+} */
