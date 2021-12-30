@@ -12,13 +12,15 @@ a{
 
 #menu-mobile{
     display: none;
+    border-radius: 7px;
+
 }
 
 #menu-mobile a{
     display: flex;
-    text-align: center;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
 }
 
 
@@ -60,7 +62,6 @@ a{
 
     #menu-mobile  a{
         margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
         color: #fff;
     }
     
