@@ -26,12 +26,18 @@
 }
 
 
+#botao-comunidade{
+    opacity: 0.3;
+    transition: 1s;
+}
+
+#botao-comunidade:hover{
+    opacity: 1;
+}
 
 /* .menu{
     width: 100%; 
 }
-
-
 
 .menu ul li{
 padding: 10px;

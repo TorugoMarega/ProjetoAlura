@@ -9,7 +9,7 @@ function aplicaHighlight() {
 }
 
 botao.addEventListener('click', () => {
-    aplicaHighlight;
+    aplicaHighlight();
 }
 )
 

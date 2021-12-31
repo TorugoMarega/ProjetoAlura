@@ -17,26 +17,22 @@
 
 } */
 
-.col-1-cab{
-/*     background-color: chocolate; */
-    width: 25%;
-    height: 100%;
-}
+
 .col-1-cab svg{
     height: 100%;
 }
-
+.col-1-cab{
+    /*     background-color: chocolate; */
+        height: 100%;
+    }
 .col-2-cab{
-
-    width: 50%;
     height: 100%;
     align-items: center;
 }
 .col-3-cab{
 /*     background-color: rgb(30, 210, 30); */
-    width: 25%;
+    height: 100%;
     text-align: right;
-
 }
 
 .caixa-pesquisa{
@@ -79,3 +75,5 @@ textarea:focus, input:focus, select:focus {
     height: 40px;
     width: 40px;
 }
+
+

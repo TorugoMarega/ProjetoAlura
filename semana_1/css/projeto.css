@@ -58,6 +58,7 @@ background-color: cornflowerblue;
     background-color: transparent;
     border: 2px solid #ffffff;
     padding: 5px;
+    cursor: pointer;
 }
 
 
