@@ -75,3 +75,7 @@ textarea:focus, input:focus, select:focus {
     display: none;
 }
 
+.img-user{
+    height: 40px;
+    width: 40px;
+}

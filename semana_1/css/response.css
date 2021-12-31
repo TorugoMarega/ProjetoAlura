@@ -185,11 +185,12 @@
     .usuario{
     display:inline-flex;
     align-items: center;
-    column-gap: 5%;
+    column-gap: 8%;
     padding: 2%;
     padding-right:3%;
     height: 100%;
     transition: 0.4s;
+    margin-right: 1rem;
 }
 
 .usuario:hover{
@@ -199,7 +200,6 @@
 
 
 .usuario img{
-    height: 100%;
     border-radius: 100%;
 }
 
