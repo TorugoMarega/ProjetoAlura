@@ -165,8 +165,8 @@
 <!--<textarea style="resize: none;" class="editorcodigo"  placeholder="Digite seu código..." name="editorcodigo" id="editorcodigo" cols="90" rows="15"></textarea>-->   
                         <div class="codigo-wrapper">
                             
-                                <code class="preview hljs" contenteditable="true" aria-label="Editor de código" aria-autocomplete="none">const test();</code>
-                            
+                                <code id="editorCodigo" class="preview hljs" contenteditable="true" aria-label="Editor de código" aria-autocomplete="none">const test();</code>
+                                
                         </div>
                     </div>
                 </div>
@@ -201,12 +201,13 @@
                     </div>
 
                         <br><br>
-                      <button class="botao">Salvar projeto</button>
+                      <button onclick="salvar()" class="botao">Salvar projeto</button>
                 </form>
             </div>
         </main>
 
     <!-- JQuery CDN Link -->
+    <script src="./js/localStorage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/colorPicker.js"></script>
     <script src="js/mobileMenu.js"></script>        
