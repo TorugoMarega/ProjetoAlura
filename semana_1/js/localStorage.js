@@ -4,8 +4,6 @@ let editorCodigo = document.querySelector('#editorCodigo').textContent;
 let linguagemSeletor = document.querySelector('#liguagem');
 let cores = document.querySelector ('#cores');
 
-console.log(editorCodigo)
-
 function salvar(){
         let listaProjeto = JSON.parse(localStorage.getItem('listaProjeto') || '[]')   
         listaProjeto.push(
