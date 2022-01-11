@@ -100,9 +100,9 @@ function cadastrar(){
 
         //AGUARDA 3 SEGUNDOS ANTES DE REDIRECIONAR A PAG DE LOGIN
         setTimeout(()=>{
-            window.location.href='../index.html'
+            window.location.href='index.html'
         }, 2000)
-        
+
     }else{
         msgError.setAttribute('style', 'display:block');
         msgError.innerHTML = '<strong>Preencha todos os campos corretamente para finalizar o cadastro</strong>';

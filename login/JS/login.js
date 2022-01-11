@@ -56,7 +56,7 @@ function entrar(){
     
     //AGUARDA 3 SEGUNDOS ANTES DE REDIRECIONAR A PAG DO EDITOR DE CODIGO
     setTimeout(()=>{
-        window.location.href = '/ProjetoAlura/login/cadastro.html';
+        window.location.href = '../semana_1/editor.html';
     }, 5)
     
     //GERA UM TOKEN GERA UM NUMERO AUTOMATICO E RANDÔMICO A PARTIR DA FUNÇÃO RANDOM DA LIB MATH, EM UMA STRING DE 16 CARACTERES
