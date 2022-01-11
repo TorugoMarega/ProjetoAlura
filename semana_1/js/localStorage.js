@@ -4,8 +4,6 @@ let editorCodigo = document.querySelector('#editorCodigo').textContent;
 let linguagemSeletor = document.querySelector('#liguagem');
 let cores = document.querySelector ('#cores');
 
-console.log(editorCodigo)
-
 function salvar(){
         let listaProjeto = JSON.parse(localStorage.getItem('listaProjeto') || '[]')   
         listaProjeto.push(
@@ -17,7 +15,4 @@ function salvar(){
                 coresSalva: cores.value,
             });
             localStorage.setItem('listaProjeto', JSON.stringify(listaProjeto));
-} 
-
-/* const abacate = document.querySelector('melhorfrutaparafazervitamina')- Torugo lindo e gostoso */
-
+}           

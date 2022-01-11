@@ -53,11 +53,31 @@
  
                     </div>
                     <div class="col-3-cab">
-                        <a class="usuario" href="https://github.com/TorugoMarega">
-                            <img class="img-user" src="./img/user.jpg" alt="Foto do usuário">
-                            <h2>User</h2>                             
-                        </a>
+                        
+                            
+                                <a id="userDesktop" class="usuario" href="" onmouseover="showExit()" onmouseout="hideExit()">
+                                    <img class="img-user" src="./img/user.jpg" alt="Foto do usuário">
+                                    <h2>User</h2>                             
+                                </a>
+                            <ul id="liSair" onmouseover="showExit()" onmouseout="hideExit()">
+                                <li> 
+                                    <a id="botaoSair" href="https://github.com/TorugoMarega">
+                                        <img class="ico-menu-mobile" style="background-color: aliceblue; border-radius: 8px;"  src="./img/GitHub-Mark-64px.png" alt="Encerrar sessão">
+                                        <h2>GitHub</h2>                             
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a id="botaoSair" href="" onclick="sair()"> 
+                                        <img class="ico-menu-mobile"  src="./img/exit.png" alt="Encerrar sessão">
+                                        <h2>Finalizar Sessão</h2>                             
+                                    </a>
+                                </li>
 
+                            </ul>
+
+
+
+                        </ul>
                         <div  class="div-lupa" id="btn-lupa"> 
                             <input type="checkbox" name="lupa" id="lupa" class="botao-lupa" onclick="showSearch()">
                             <label for="lupa">
@@ -90,7 +110,7 @@
                                     </a></li>
                 
                                 <li>
-                                    <a href="comunidade.html">
+                                    <a href="./comunidade/comunidade.html">
                                         <svg  class="ico-menu-mobile" viewBox="0 0 48 48" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="48" height="48" rx="16" fill="#5081FB" />
@@ -107,11 +127,16 @@
                                         <img class="ico-menu-mobile" style="border-radius: 100%;" src="./img/user.jpg" alt="Foto do usuário">
                                         <h2>User</h2>                             
                                     </a>
+                                </li>                                
+                                <li>
+                                    <a style="margin-top: .2rem;" href="" onclick="sair()">
+                                        <img class="ico-menu-mobile"  src="./img/exit.png" alt="Encerrar sessão">
+                                        <h2>Finalizar Sessão</h2>                             
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-
         </header>
 <!------------------------------------------------------------------------------------------------->
 <!--------------------------------------------CONTEUDO--------------------------------------------->
@@ -161,8 +186,7 @@
                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="6" cy="6" r="6" fill="#27C93F"/>
                                     </svg> <!-- bolinha verde --> 
-                        </div>
-<!--<textarea style="resize: none;" class="editorcodigo"  placeholder="Digite seu código..." name="editorcodigo" id="editorcodigo" cols="90" rows="15"></textarea>-->   
+                        </div> 
                         <div class="codigo-wrapper">
                             
                                 <code id="editorCodigo" class="preview hljs" contenteditable="true" aria-label="Editor de código" aria-autocomplete="none">const test();</code>
@@ -206,8 +230,10 @@
             </div>
         </main>
 
-    <!-- JQuery CDN Link -->
+
+
     <script src="./js/localStorage.js"></script>
+    <!-- JQuery CDN Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/colorPicker.js"></script>
     <script src="js/mobileMenu.js"></script>        
@@ -215,5 +241,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script src="./js/highlight.js"></script>
     <script>hljs.highlightAll()</script>
+    <script src="/login/JS/validToken.js"></script>
 </body>
 </html>
+

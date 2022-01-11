@@ -74,6 +74,9 @@
     .cores{
         height: 15vh;
     }
+    #liSair{
+        display:none;
+    }
 }   
 /* ------------------------------------------------------------------------TABLET--------------------------------------------------------------------------------------------------------------------------------- */
  @media screen and (min-width: 768px){
@@ -147,14 +150,18 @@
     .div-lupa{
         display: none;
     }
+    #liSair{
+        display:none;
+    }
 } 
 
 /* --------------------------------------------DESKTOP------------------------------------------ */
   @media screen and (min-width: 992px){
-
+    
     .usuario{
         visibility: visible;
       }
+
 
     .menu-hamburger{
         visibility: hidden;
@@ -234,6 +241,7 @@
 .usuario img{
     border-radius: 100%;
 }
+
 
 
 .col-1-cab{

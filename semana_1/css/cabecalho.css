@@ -76,4 +76,33 @@ textarea:focus, input:focus, select:focus {
     width: 40px;
 }
 
+#liSair{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+#botaoSair{
+        display: inline-flex;
+        align-items: center;
+        gap:4%;
+        height: 100%;
+        padding: .5rem;
+        width: 200px;
+        transition: 0.4s;
+        background-color: black;
+        z-index: 1001;
+}
+#botaoSair:hover{
+    background-color: #192F4A;
+
+}
+
+#botaoSair img{
+    width: 30px;
+    height: 30px;
+}
+
 

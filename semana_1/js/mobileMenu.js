@@ -1,4 +1,16 @@
 const btnMobile = document.getElementById('btn-mobile'); 
+const liSair = document.querySelector('#liSair');
+
+//MOSTRA MENU DROPDOWN QUANDO CLICADO NA CAIXA DE USUÁRIO, EXIBINDO O BOTÃO DE FINALIZAR SESSÃO E O LINK DO GITHUB
+function showExit(){
+    liSair.style.display = 'inline-flex';
+}
+
+function hideExit(){
+    liSair.style.display = 'none';
+}
+
+//MOSTRA O MENU MOBILE SE TOCADO NO BOTÃO, SE NÃO ESCONDE
 function toggleMenu(event){
  
     if (event.type=='touchstart')
@@ -11,6 +23,8 @@ function toggleMenu(event){
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu, );
 
+
+//MOSTRA A BARRA DE PESQUISA MOBILE SE TOCADO NO BOTÃO, SE NÃO ESCONDE
 function showSearch() {
     var checkBox = document.getElementById("lupa");
     var searchBar = document.getElementById("mobileSearch");
@@ -21,7 +35,7 @@ function showSearch() {
         searchBar.style.display = "block";
 
     } else {
-        btnSearch.style.background = "none"
+        btnSearch.style.background = "none";
         searchBar.style.display = "none";
     }
   }
