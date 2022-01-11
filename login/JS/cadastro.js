@@ -100,7 +100,7 @@ function cadastrar(){
 
         //AGUARDA 3 SEGUNDOS ANTES DE REDIRECIONAR A PAG DE LOGIN
         setTimeout(()=>{
-            window.location.href='/login/login.html'
+            window.location.href='../index.html'
         }, 2000)
         
     }else{
