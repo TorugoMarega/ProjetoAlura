@@ -5,7 +5,7 @@ let btnEntrar = document.getElementById('btnEntrar');
 setTimeout(()=>{
 if(localStorage.getItem('listaUser') === null){
     alert("NÃO HÁ USUÁRIOS CADASTRADOS, REALIZE SEU CADASTRO")
-    window.location.href = '/ProjetoAlura/login/cadastro.html'
+    window.location.href = './cadastro.html'
 }
 }, 3000)
 
