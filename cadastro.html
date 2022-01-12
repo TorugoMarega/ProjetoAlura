@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/cadastro.css">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../semana_1/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
     <title>Cadastro | Alura Dev</title>
 </head>
 
 <body>
     <div class="container">
-
-
-            <form class="card">
+            <div  class="card">
                 <h1>Cadastrar</h1>
                 <div id="msgError"></div>
                 <div id="msgSuccess"></div>
 
                 <div class="label-float">
-                    <input type="text" id="nome" placeholder="" required>
+                    <input type="text" id="nome" placeholder="" required autocomplete="off">
                     <label id="labelNome" for="nome">Nome</label>
                 </div>
 
@@ -31,22 +29,22 @@
                 </div>
 
                 <div class="label-float">
-                    <input type="password" name="" id="senha" required autocomplete="off">
+                    <input type="password" name="" id="senha" required autocomplete="off" >
                     <label id="labelSenha" for="senha">Senha</label>
                     <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
                 </div>
 
                 <div class="label-float">
-                    <input type="password" name="" id="confirmaSenha" required autocomplete="off">
+                    <input type="password" name="" id="confirmaSenha" required  autocomplete="off">
                     <label id="labelConfirmaSenha" for="confirmaSenha">Confirmar Senha</label>
                     <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
                 </div>
 
                 <div class="justify-center">
-                    <button id="btnCadastro" onclick="cadastrar()">Cadastrar</button>
+                    <button type="" id="btnCadastro" onclick="cadastrar()">Cadastrar</button>
                 </div>
-            </form> 
+            </div> 
     </div>
-    <script src="/login/JS/cadastro.js"></script>      
+    <script src="js/cadastro.js"></script>      
 </body>
 </html>
