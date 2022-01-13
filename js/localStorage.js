@@ -51,12 +51,6 @@ function salvaLocalStorage(objetoJson){
     localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
 }
 
-
-
-
-
-
-/* 
 function salvar(){
         let listaProjeto = JSON.parse(localStorage.getItem('listaProjeto') || '[]')   
         listaProjeto.push(
@@ -69,4 +63,3 @@ function salvar(){
             });
             localStorage.setItem('listaProjeto', JSON.stringify(listaProjeto));
 }           
- */
