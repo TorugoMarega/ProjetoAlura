@@ -6,8 +6,9 @@ let token = localStorage.getItem('token')
     window.location.href = 'index.html';
 }
  */
+
 function sair() {
     localStorage.removeItem('token');
-    window.location.href = './index.html';
+    window.location.href = 'index.html';
 }
 
