@@ -38,6 +38,9 @@
     font-family: 'Roboto', sans-serif;
     border: none;
     letter-spacing: 1px;
+    overflow-y: auto;
+
+    overflow-x: auto;
 }
 
 .botao-highlight {
@@ -61,13 +64,12 @@
  opacity: 100%;
 }
 
-/* .fundo-azul{
-    background: #6BD1FF;
-    border-radius: 8px;
-    padding: 32px;
-    width: 100%;
+
+#botao-comunidade{
+    opacity: 0.3;
+    transition: 1s;
 }
 
- */
-
-
+#botao-comunidade:hover{
+    opacity: 1;
+}

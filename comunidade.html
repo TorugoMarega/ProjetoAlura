@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/response.css">
+    <link rel="stylesheet" href="css/comunidade.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/dracula.css">
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/editor.css">
-    <link rel="stylesheet" href="css/projeto.css">
     <link rel="stylesheet" href="css/mobileMenu.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Desafio Alura | Frontend</title>
@@ -67,7 +65,7 @@
                                     </a>
                                 </li>
                                 <li> 
-                                    <a id="botaoSair" href="" onclick="sair()"> 
+                                    <a id="botaoSair" style="cursor: pointer;" onclick="sair()"> 
                                         <img class="ico-menu-mobile"  src="img/exit.png" alt="Encerrar sessão">
                                         <h2>Finalizar Sessão</h2>                             
                                     </a>
@@ -98,7 +96,7 @@
                                 <span id="hamburguer"></span>
                             </button>
                             <ul id="menu-mobile">
-                                <li><a href="">
+                                <li><a href="editor.html">
                                         <svg class="ico-menu-mobile" width="48" height="48" viewBox="0 0 48 48" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="48" height="48" rx="16" fill="#5081FB" />
@@ -110,7 +108,7 @@
                                     </a></li>
                 
                                 <li>
-                                    <a href="index.html">
+                                    <a href="comunidade.html">
                                         <svg  class="ico-menu-mobile" viewBox="0 0 48 48" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="48" height="48" rx="16" fill="#5081FB" />
@@ -146,7 +144,7 @@
             <menu class="menu">
                 <h1>Menu</h1>
                 <nav class="menu-nav">
-                                <a href="editor.html">
+                                <a id="botao-editor" href="editor.html">
                                     <svg class="editor-icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="48" height="48" rx="16" fill="#5081FB" />
@@ -169,9 +167,9 @@
                                 </a>
                 </nav>
             </menu>
-<!-------------------------------------------COLUNA-2------------------------------------------------>               
+<!-------------------------------------------COLUNA-2 e 3------------------------------------------------>               
             <main>
-                <h1>Todos os projetos</h1>
+                
                 <ul class="todos-projetos js-todos-projetos">
                     <li></li>
                 </ul>
@@ -179,17 +177,17 @@
 
 
 
+
     <script src="js/validToken.js"></script>
-    <script src="js/localStorage.js"></script>
-    <script src="js/comunidade.js"></script>
-    <!-- JQuery CDN Link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/colorPicker.js"></script>
-    <script src="js/mobileMenu.js"></script>        
-    <!-- Import sintax highlight -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script src="js/highlight.js"></script>
-    <script>hljs.highlightAll()</script>
+<!--     <script src="js/localStorage.js"></script> -->
+<!-- JQuery CDN Link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/colorPicker.js"></script>
+<script src="js/mobileMenu.js"></script>        
+<!-- Import sintax highlight -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script>hljs.highlightAll()</script>
+<script src="js/comunidade.js"></script>
 </body>
 </html>
 
