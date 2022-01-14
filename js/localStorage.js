@@ -7,6 +7,7 @@ const salvarProjeto = document.querySelector('#salvarProjeto')
 
 
 salvarProjeto.addEventListener('click', ()=>{
+
     if(typeof(Storage) !=="undefined"){
         const projeto = montaProjeto()
         salvaLocalStorage(projeto)
@@ -25,7 +26,8 @@ function montaProjeto(){
             'codCor': coresValor.value
         }
     }
-    return projeto
+        return projeto
+
 }
 
 function criaId(){
@@ -36,6 +38,7 @@ function criaId(){
 function salvaLocalStorage(objetoJson){
     localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
 }
+
 
 
 /* 

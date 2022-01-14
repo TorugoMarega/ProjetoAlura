@@ -48,7 +48,7 @@ function mostraProjetos() {
     }
     
     let projetos = []
-    for (let i = 0; i < localStorage.length; i++) {
+    for (let i = 2; i < localStorage.length; i++) {
         projetos.push(JSON.parse(localStorage.getItem(i)))
     }
     projetos.forEach(projeto => {
